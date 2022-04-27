@@ -1,21 +1,15 @@
+import math
 liczby=str(input())
 n= int(liczby[0])
 k= int(liczby[2])
-s= n-k
-def silnia_n(n):
-    if n > 1:
-        return n*silnia_n(n-1)
-    return 1
 
-def silnia_k(k):
-    if k > 1:
-        return k*silnia_k(k-1)
-    return 1
+if k == 1 or k == n:
+    print(1)
 
-def silnia_s(s):
-    if s > 1:
-        return s*silnia_s(s-1)
-    return 1
-
-wynik= silnia_n(n)/(silnia_k(k)*silnia_s(s))
-print(int(wynik))
+if k > n:
+    print(0)
+else:
+    silnia_n= math.factorial(n)
+    silnia_k= math.factorial(k)
+    dwumian= silnia_n // (silnia_k*(n-k))
+    print(dwumian)
