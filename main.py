@@ -1,7 +1,7 @@
 import math
-liczby=str(input().split(" "))
+liczby=input().split(" ")
 n= int(liczby[0])
-k= int(liczby[2])
+k= int(liczby[1])
 
 if k == 1 or k == n:
     print(1)
