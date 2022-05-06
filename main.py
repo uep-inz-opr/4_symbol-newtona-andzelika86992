@@ -1,5 +1,5 @@
 import math
-liczby=str(input())
+liczby=str(input().split(" "))
 n= int(liczby[0])
 k= int(liczby[2])
 
